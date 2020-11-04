@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: dubbo-nacos-provider
+dubbo:
+  application:
+    name: ${spring.application.name}
+  registry:
+    address: nacos://mapleVM:8848
+  protocol:
+    name: dubbo
+    port: 20080
+server:
+  port: 11111
+nacos:
+  discovery:
+    server-addr: mapleVM:8848

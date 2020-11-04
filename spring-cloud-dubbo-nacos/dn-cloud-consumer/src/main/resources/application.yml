@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: spring-cloud-dubbo-nacos-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: mapleVM:8848
+dubbo:
+  cloud:
+    subscribed-services: spring-cloud-dubbo-nacos-provider
+server:
+  port: 11112

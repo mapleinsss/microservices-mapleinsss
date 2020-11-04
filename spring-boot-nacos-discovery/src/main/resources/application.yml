@@ -1,0 +1,5 @@
+nacos:
+  discovery:
+    server-addr: mapleVM:8848
+server:
+  port: 11111

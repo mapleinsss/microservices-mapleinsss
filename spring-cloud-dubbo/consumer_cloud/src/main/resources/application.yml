@@ -1,0 +1,13 @@
+dubbo:
+  cloud:
+    subscribed-services: provider_cloud
+server:
+  port: 11112
+spring:
+  application:
+    name: consumer_cloud
+  cloud:
+    zookeeper:
+      discovery:
+        register: false
+      connect-string: mapleVM:22181

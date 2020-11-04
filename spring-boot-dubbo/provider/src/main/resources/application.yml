@@ -1,0 +1,13 @@
+dubbo:
+  application:
+    name: provider
+  registry:
+    address: zookeeper://mapleVM:22181
+  protocol:
+    name: dubbo
+    port: 20080
+  # 可用注解 DubboComponentScan 代替
+  scan:
+    base-packages: org.maple.service.impl
+server:
+  port: 11111

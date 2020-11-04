@@ -1,0 +1,14 @@
+dubbo:
+  protocol:
+    name: dubbo
+    port: 20010
+server:
+  port: 11111
+spring:
+  application:
+    name: provider_cloud
+  cloud:
+    zookeeper:
+      discovery:
+        register: true
+      connect-string: mapleVM:22181

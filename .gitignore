@@ -1,0 +1,17 @@
+# Project exclude paths
+/sentinel-quickstart/target/
+/spring-boot-dubbo/api/target/
+/spring-boot-dubbo/consumer/target/
+/spring-boot-dubbo/provider/target/
+/spring-boot-dubbo-nacos/dubbo-nacos-consumer/target/
+/spring-boot-dubbo-nacos/dubbo-nacos-provider/target/
+/spring-boot-nacos-config/target/
+/spring-boot-nacos-discovery/target/
+/spring-cloud-dubbo/api_cloud/target/
+/spring-cloud-dubbo/consumer_cloud/target/
+/spring-cloud-dubbo/provider_cloud/target/
+/spring-cloud-dubbo-nacos/dn-cloud-api/target/
+/spring-cloud-dubbo-nacos/dn-cloud-consumer/target/
+/spring-cloud-dubbo-nacos/dn-cloud-provider/target/
+/spring-cloud-nacos-config/target/
+/spring-cloud-sentinel/target/

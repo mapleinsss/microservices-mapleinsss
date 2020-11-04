@@ -1,0 +1,9 @@
+dubbo:
+  application:
+    name: consumer
+  registry:
+    address: zookeeper://mapleVM:22181
+  consumer:
+    timeout: 3000
+server:
+  port: 11112
