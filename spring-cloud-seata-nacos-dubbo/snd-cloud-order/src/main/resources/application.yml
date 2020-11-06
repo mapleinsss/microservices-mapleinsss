@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: spring-cloud-dubbo-nacos-order
+  cloud:
+    nacos:
+      discovery:
+        server-addr: mapleVM:8848
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://mapleVM:3307/xa1-order?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&autoReconnect=true&allowMultiQueries=true&rewriteBatchedStatements=true
+    username: root
+    password: *
+    hikari:
+      pool-name: MyHikariCP
+      minimum-idle: 5
+      idle-timeout: 60000
+      maximum-pool-size: 5
+      auto-commit: true
+      max-lifetime: 60000
+      connection-timeout: 60000
+      login-timeout: 5
+      validation-timeout: 3000
+      connection-test-query: SELECT 1
+dubbo:
+  registry:
+    address: spring-cloud://mapleVM:8848
+  protocol:
+    name: dubbo
+    port: 20080
+server:
+  port: 15002
