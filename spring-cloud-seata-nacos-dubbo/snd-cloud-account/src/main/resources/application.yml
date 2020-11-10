@@ -9,7 +9,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://mapleVM:3307/xa2-account?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&autoReconnect=true&allowMultiQueries=true&rewriteBatchedStatements=true
     username: root
-    password: *
+    password: Maple1ns!
     hikari:
       pool-name: MyHikariCP
       minimum-idle: 5
