@@ -1,0 +1,14 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: mapleins-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: my_route
+          uri: http://127.0.0.1:8081/testController
+          predicates:
+            # 这里会把 Path 的路径全部拼接到 uri 的后面，例如使用 Path=/ms/**，那么最后的 uri 为 http://127.0.0.1:8081/testController/ms/**
+            - Path=/**
